@@ -51,11 +51,11 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: /home/gbruscan/data/wordpress
+      device: /home/tle-dref/data/wordpress
       o: bind
   mariadb_data:
     driver: local
     driver_opts:
       type: none
-      device: /home/gbruscan/data/mariadb
+      device: /home/tle-dref/data/mariadb
       o: bind

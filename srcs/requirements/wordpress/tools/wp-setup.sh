@@ -25,7 +25,7 @@ if [ ! -f /var/www/html/wp-config.php ]; then
 
     # Installer WordPress
     /usr/bin/php82 /usr/local/bin/wp core install \
-        --url=https://gbruscan.42.fr \
+        --url=https://tle-dref.42.fr \
         --title="Inception" \
         --admin_user="${WP_ADMIN_USER}" \
         --admin_password="${WP_ADMIN_PASSWORD}" \

@@ -1,8 +1,8 @@
 NAME = inception
 
 # Chemins des volumes
-WORDPRESS_PATH = /home/gbruscan/data/wordpress
-MARIADB_PATH = /home/gbruscan/data/mariadb
+WORDPRESS_PATH = /home/tle-dref/data/wordpress
+MARIADB_PATH = /home/tle-dref/data/mariadb
 
 all: prepare build up
 
@@ -10,8 +10,8 @@ prepare:
 	@echo "Création des répertoires pour les volumes..."
 	@sudo mkdir -p $(WORDPRESS_PATH)
 	@sudo mkdir -p $(MARIADB_PATH)
-	@sudo chown -R gbruscan:gbruscan $(WORDPRESS_PATH)
-	@sudo chown -R gbruscan:gbruscan $(MARIADB_PATH)
+	@sudo chown -R tle-dref:tle-dref $(WORDPRESS_PATH)
+	@sudo chown -R tle-dref:tle-dref $(MARIADB_PATH)
 	@sudo chmod 755 $(WORDPRESS_PATH)
 	@sudo chmod 755 $(MARIADB_PATH)
 
@@ -34,11 +34,11 @@ clean: down
 
 fclean: clean
 	@echo "Suppression des volumes..."
-	@sudo rm -rf /home/gbruscan/data
+	@sudo rm -rf /home/tle-dref/data
 	@sudo mkdir -p $(WORDPRESS_PATH)
 	@sudo mkdir -p $(MARIADB_PATH)
-	@sudo chown -R gbruscan:gbruscan $(WORDPRESS_PATH)
-	@sudo chown -R gbruscan:gbruscan $(MARIADB_PATH)
+	@sudo chown -R tle-dref:tle-dref $(WORDPRESS_PATH)
+	@sudo chown -R tle-dref:tle-dref $(MARIADB_PATH)
 	@sudo chmod 755 $(WORDPRESS_PATH)
 	@sudo chmod 755 $(MARIADB_PATH)
 
